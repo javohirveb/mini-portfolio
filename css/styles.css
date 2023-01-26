@@ -428,6 +428,17 @@ body.dark-theme {
     color: var(--text-color-light);
 }
 
+.footer__copy a {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+    transition: .3s;
+    text-decoration: underline;
+}
+
+.footer__copy a:hover {
+    color: var(--title-color);
+}
+
 /* SCROLL BAR */
 ::-webkit-scrollbar {
     width: 0.6rem;
@@ -449,7 +460,7 @@ body.dark-theme {
 @media screen and (max-width: 320px) {
     .container {
         margin-left: 1rem;
-            margin-right: 1rem;
+        margin-right: 1rem;
     }
 
     .profile__info {
@@ -480,6 +491,7 @@ body.dark-theme {
 }
 
 @media screen and (min-width:776px) {
+
     .projects__content,
     .skills__content {
         grid-template-columns: repeat(2, 332px);
